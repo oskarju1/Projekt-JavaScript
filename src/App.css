@@ -1,0 +1,135 @@
+.App
+{
+ 	min-height: 100vh;
+ 	background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100% );
+ 	text-align: center;
+ 	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+ 	text-transform: uppercase;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search-form
+{
+ 	min-height: 10vh;
+ 	display: flex;
+  	justify-content: center;
+ 	align-items: center; 
+}
+
+.search-bar
+{
+  	margin-right: 20px;
+  	width: 50%;
+ 	border: none;
+  	padding: 15px;
+  	border-radius: 100px;
+}
+
+.search-button
+{
+	font-size: 15px;
+	align-content: center;
+  	background: lightcoral;
+  	border: none;
+  	padding: 15px 50px;
+  	color: white;
+  	cursor: pointer;
+  	border-radius: 30px;
+}
+
+.recipes
+{
+  	display: inline-block;
+  	justify-content: space-around;
+  	flex-wrap: wrap;
+  	margin-left: 100px;
+	margin-right: 100px;
+	border-radius: 20px;
+}
+
+
+@keyframes rotation 
+{
+	from {transform:rotate(0deg)}
+	to {transform:rotate(-360deg)}
+}
+
+@keyframes expand 
+{
+	from {height: 0px;}
+	to {height: max;}
+}
+
+
+.footer
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align:center;
+	margin-top:10%;
+	border-radius: 10px;
+	border: none;
+}
+
+.title
+{
+	background-color: rgba(217, 217, 217, 0.5);
+	margin: auto;
+	width: auto;
+	padding: 5px;
+	background-color: light-grey;
+	background-size: auto;
+	border-radius: 50px;
+	border: none;
+	max-width: 1000px;
+	align-content: center;
+  	animation: expand;
+  	animation-duration: 1s;
+  	text-decoration: none;
+  	color: black;
+}
+
+@keyframes logoanim
+{
+	from {font-size: 0px;}
+	to {font-size: max;}
+}
+
+.back
+{
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	padding: 18px;
+	background-color: rgba(50, 50, 50, 0.5);
+	border-radius: 20px;
+	border: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	animation: logoanim;
+	animation-duration: 3s;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+}
+
+.back:hover
+{
+	box-shadow: 0px 0px 10px black;
+	transition: 0.5s;
+}
+
+.search-button:hover
+{
+  	box-shadow: 0px 5px 20px black;
+  	transition: 0.5s;
+}
+
+
+.search-bar:hover
+{
+  	box-shadow: 0px 5px 20px black;
+  	transition: 0.5s;
+}
